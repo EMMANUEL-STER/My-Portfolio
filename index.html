@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">Emmanuel</h1>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+       <li><button class="close-btn" id="close-btn">✕</button></li> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2 class="fade-in">Hello, I'm Emmanuel<span class="typing"></span></h2>
+      <p class="fade-in">A Frontend Developer specializing in HTML, CSS, and JavaScript.
+        <br>I build clean responsive web applications and connect them with
+        <br>functional data systems to create seamless user experiences.
+      </p>
+    </div>
+    <div class="hero-image fade-in">
+      <img src="photo.jpg" alt="My photo">
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I am a frontend developer, and I build beautiful and responsive websites.
+      <br>📍 Accra, Ghana
+      <br>📧 abadaemmanuel2021@gmail.com
+      <br>📞 0546002575
+    </p>
+    <div class="cv-wrap">
+      <a class="cv-btn" href="emmanuel-cv.pdf" download>⬇ Download CV</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-item">
+      <div class="skill-header"><span>HTML</span><span>80%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width: 80%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-header"><span>CSS</span><span>95%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width: 95%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-header"><span>JavaScript</span><span>70%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-header"><span>React</span><span>70%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-header"><span>Python</span><span>90%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width: 90%;"></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="fade-in">My Projects</h2>
+    <div class="project-container">
+      <div class="project-card fade-in">
+        <h3>Calculator App</h3>
+        <p>A simple calculator built with HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="project-card fade-in">
+        <h3>To-Do App</h3>
+        <p>A task management app for organizing daily activities.</p>
+      </div>
+      <div class="project-card fade-in">
+        <h3>Weather App</h3>
+        <p>A weather application using API data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="fade-in">Contact Me</h2>
+    <form>
+      <input class="fade-in" type="text" name="name" placeholder="Enter your name">
+      <input class="fade-in" type="email" name="email" placeholder="Enter your email">
+      <textarea class="fade-in" name="message" placeholder="Write your message"></textarea>
+      <button class="fade-in" type="submit">Send Message</button>
+    </form>
+    <p id="success-msg" style="display:none; color:lightgreen; margin-top:15px;">
+      ✅ Message sent successfully!
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 Emmanuel. All rights reserved.
+      <br>WhatsApp: 0546002575
+      <br>📧 Email: abadaemmanuel2021@gmail.com
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
